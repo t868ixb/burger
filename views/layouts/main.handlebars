@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chi Town Burgers!</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <center>
+            <h1>Chicago's Favorite Burger Menu!</h1>
+            <h2>You make it, you eat it!</h2>
+            <hr>
+        </center>
+        <br>
+        <!-- add a burger -->
+        <form action="burger/create" method="POST">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <!-- Burger Input Box -->
+                <div class="form-group col-md-6">
+                    <center><label for="new_burger" class="red_font"></label>Request a new burger and place your order!</center>
+                    <textarea class="form-control" columns="8" rows="1.5" id="new_burger" name="burger_name"></textarea>
+                    <center>
+                        <button id="submit-button" type="submit" class="btn btn-primary">Place Order</button>
+                    </center>
+                </div>
+            </div>
+        </form>
+
+        <!-- from index.handlebars -->
+        {{{body}}}
+        <br><br>
+    </div>
+
+    <!-- Link in jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</body>
+
+</html>
