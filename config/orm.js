@@ -52,6 +52,18 @@ var orm = {
 
   }
 
+   // delete evidence()
+   //did not finish this section!!!!!
+  //  deleteEvidence: function(burgerID, callback){
+
+  //   // Run MySQL Query
+  //   connection.query('UPDATE burgers SET ? WHERE ?', [{devoured: true}, {id: burgerID}], function (err, result) {
+  //       if (err) throw err;
+  //       callback(result);
+  //     });
+
+  // }
+
 }; //end of the orm object
 
 
