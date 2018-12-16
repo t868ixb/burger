@@ -17,7 +17,7 @@ connection.connect(function (err) {
 // Methods for MySQL commands
 var orm = {
 
-  // selectAll()
+  //  
   selectAll: function(callback) {
 
     // Run MySQL Query
@@ -55,10 +55,10 @@ var orm = {
 
    //delete evidence()
    //did not finish this section!!!!!
-    deleteEvidence: function(burgerID, callback){
+    delete: function(burgerID, callback){
 
    //Run MySQL Query to delete the burger
-  connection.query('DELETE burgers SET ? WHERE ?', [{devoured: true}, {id: burgerID}], function (err, result) {
+  connection.query('DELETE burgers WHERE ?', [{devoured: true}, {id: burgerID}], function (err, result) {
         if (err) throw err;
         callback(result);
        });
