@@ -50,7 +50,7 @@ var orm = {
         callback(result);
       });
 
-  }
+  },
 
    //delete evidence()
    //did not finish this section!!!!!
