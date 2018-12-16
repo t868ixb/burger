@@ -21,6 +21,7 @@ var orm = {
   selectAll: function(callback) {
 
     // Run MySQL Query
+    //this burger db is on the heroku side
     connection.query('SELECT * FROM burgers', function (err, result) {
       if (err) throw err;
       callback(result);
