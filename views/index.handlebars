@@ -33,12 +33,7 @@
                 <button class="btn btn-danger delete-button" type="button">Delete evidence!</button>
               </span>
             </div>
-          {{/if}}
-        {{/each}}
-
-      </div>
-    {{!-- adding new delete code --}}
-    <form action="burger/eat/{{id}}" method="DELETE">
+            <form action="burger/delete/{{id}}" method="DELETE">
             <div class="input-group">
               <li class="form-control">{{id}}. {{burger_name}}</li>
                 <span class="input-group-btn">
@@ -46,6 +41,12 @@
                 </span>
             </div>
           </form>
+          {{/if}}
+        {{/each}}
+
+      </div>
+    {{!-- adding new delete code --}}
+    
 
     {{!-- end of adding new delete code --}}
     </div>
