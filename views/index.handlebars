@@ -37,6 +37,17 @@
         {{/each}}
 
       </div>
+    {{!-- adding new delete code --}}
+    <form action="burger/eat/{{id}}" method="DELETE">
+            <div class="input-group">
+              <li class="form-control">{{id}}. {{burger_name}}</li>
+                <span class="input-group-btn">
+                  <button class="btn btn-warning delete-button" type="submit">Delete IT!!</button>
+                </span>
+            </div>
+          </form>
+
+    {{!-- end of adding new delete code --}}
     </div>
   </main>
 </div>
