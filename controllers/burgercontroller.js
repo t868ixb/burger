@@ -45,7 +45,7 @@ router.post('/burger/eat/:id', function (req, res) {
 
 // Delete a Burger: hide the evidence
 router.delete('/burger/delete/:id', function (req, res) {
-  burgers.destroy(req.params.id, function() {
+  burgers.delete(req.params.id, function() {
     res.redirect('/index');
   });
 });
