@@ -24,7 +24,7 @@ var burger = {
   },
 
   delete: function(burger_id, callback){
-    orm.delete(burger_id, function(res){
+    orm.destroy(burger_id, function(res){
       callback(res);
     });
   }
