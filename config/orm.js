@@ -54,15 +54,16 @@ var orm = {
 
    // delete evidence()
    //did not finish this section!!!!!
-  //  deleteEvidence: function(burgerID, callback){
+    deleteEvidence: function(burgerID, callback){
 
-  //   // Run MySQL Query
-  //   connection.query('UPDATE burgers SET ? WHERE ?', [{devoured: true}, {id: burgerID}], function (err, result) {
-  //       if (err) throw err;
-  //       callback(result);
-  //     });
+  //  Run MySQL Query to delete the burger
+  connection.query('DELETE burgers SET ? WHERE ?', [{devoured: true}, {id: burgerID}], function (err, result) {
+        if (err) throw err;
+        callback(result);
+       });
 
-  // }
+   }
+
 
 }; //end of the orm object
 

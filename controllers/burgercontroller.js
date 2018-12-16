@@ -43,6 +43,13 @@ router.post('/burger/eat/:id', function (req, res) {
   });
 });
 
+// Delete a Burger: hide the evidence
+router.post('/burger/delete/:id', function (req, res) {
+  burgers.delete(req.params.id, function() {
+    res.redirect('/index');
+  });
+});
+
 
 // Export routes
 module.exports = router;
