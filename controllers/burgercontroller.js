@@ -45,10 +45,18 @@ router.post('/burger/eat/:id', function (req, res) {
 
 // Delete a Burger: hide the evidence
 router.delete('/burger/delete/:id', function (req, res) {
-  burgers.delete(req.params.id, function() {
+  var burgerId = req.params.id;
+  var condition = "id = " + burgerId;
+  
+  burgers.delete(condition, function() {
     res.redirect('/index');
   });
 });
+
+//tutor
+
+
+//tutor end
 
 
 // Export routes
