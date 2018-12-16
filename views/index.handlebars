@@ -27,17 +27,11 @@
         <!-- adding burgers-->
         {{#each burgers}}
           {{#if this.devoured}}
-            <div class="input-group">
-              <li class="form-control">{{this.id}}. {{this.burger_name}}</li>
-              <span class="input-group-btn">
-                <button class="btn btn-danger delete-button" type="button">Delete evidence!</button>
-              </span>
-            </div>
             <form action="burger/delete/{{id}}" method="DELETE">
             <div class="input-group">
               <li class="form-control">{{id}}. {{burger_name}}</li>
                 <span class="input-group-btn">
-                  <button class="btn btn-warning delete-button" type="submit">Delete IT!!</button>
+                  <button class="btn btn-danger delete-button" type="submit">Delete</button>
                 </span>
             </div>
           </form>
