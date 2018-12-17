@@ -6,8 +6,6 @@ var PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname)));
-app.use("/styles", express.static(__dirname));
 app.use("/img", express.static(__dirname + '/img'));
 app.use("/javascript", express.static(__dirname + '/javascript'));
 
