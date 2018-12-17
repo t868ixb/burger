@@ -1,5 +1,5 @@
  // Remove Burger
- $(".delete-burger").on("click", function(event){
+ $(".delete-button").on("click", function(event){
     var id = $(this).data("id");
 
     $.ajax("/api/burger/" + id, {
