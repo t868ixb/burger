@@ -1,13 +1,15 @@
 const bodyParser = require('body-parser');
 const express = require('express');
 const app = express();
+const path = require('path');
 
 var PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use("/img", express.static(__dirname + '/img'));
-app.use("/javascript", express.static(__dirname + '/javascript'));
+app.use(express.static(path.join(__dirname, '../javascript');
+//app.use("/img", express.static(__dirname + '/img'));
+//app.use("/javascript", express.static(__dirname + '/javascript'));
 
 // Handlebars
 var exphbs = require('express-handlebars');
