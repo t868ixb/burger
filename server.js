@@ -8,9 +8,9 @@ var PORT = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname)));
-app.use("/assets/css", express.static(__dirname + '/css'));
-app.use("/assets/img", express.static(__dirname + '/img'));
-app.use("/assets/javascript", express.static(__dirname + '/javascript'));
+app.use("/public/assets/css", express.static(__dirname + '/public/assets/css'));
+app.use("/public/assets/img", express.static(__dirname + '/public/assets/img'));
+app.use("/public/assets/javascript", express.static(__dirname + '/public/assets/javascript'));
 
 // Handlebars
 var exphbs = require('express-handlebars');
