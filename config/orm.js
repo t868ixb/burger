@@ -58,7 +58,7 @@ var orm = {
     delete: function(burgerID, callback){
 
    //Run MySQL Query to delete the burger
-  connection.query('DELETE FROM burgers WHERE ?', [{devoured: true}, {id: burgerID}], function (err, result) {
+  connection.query('DELETE FROM burgers WHERE ?', [{{id: burgerID}], function (err, result) {
         if (err) throw err;
         callback(result);
        });

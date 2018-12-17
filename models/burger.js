@@ -23,9 +23,9 @@ var burger = {
     });
   },
 
-  delete: function(condition, callback){
-    orm.delete("burgers", condition, function(result){
-      callback(result);
+  delete: function(burger_id, callback){
+    orm.delete(burger_id, function(res){
+      callback(res);
     });
   }
 
