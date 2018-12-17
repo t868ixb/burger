@@ -50,12 +50,7 @@ router.delete("/burger/delete/:id", function(req, res) {
   burgers.delete(condition, function() {
     res.redirect("/index");
   });
-
-
+});
 
 // Export routes
 module.exports = router;
-
-
-
-
