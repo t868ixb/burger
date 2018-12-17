@@ -44,19 +44,13 @@ router.post('/burger/eat/:id', function (req, res) {
 });
 
 // Delete a Burger: hide the evidence
-router.delete('/burger/delete/:id', function (req, res) {
-  var burgerId = req.params.id;
-  var condition = "id = " + burgerId;
-  
+router.delete("/burger/delete/:id", function(req, res) {
+  var condition = "id = " + req.params.id;
+
   burgers.delete(condition, function() {
-    res.redirect('/index');
+    res.redirect("/index");
   });
-});
 
-//tutor
-
-
-//tutor end
 
 
 // Export routes
